@@ -1,0 +1,11 @@
+[package]
+name = "sparkfun-alphanum4"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+embedded-hal = "0.2.7"
+ht16k33 = { version = "0.4.0", default-features=false }
+
+[patch.crates-io]
+ht16k33 = { path = "../ht16k33" }
